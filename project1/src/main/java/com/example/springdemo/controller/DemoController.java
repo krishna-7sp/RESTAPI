@@ -18,12 +18,12 @@ import com.example.springdemo.service.DemoService;
 public class DemoController {
 	@Autowired
 	DemoService obj;
-	@PostMapping("/save")
+	@PostMapping("/post")
 	public DemoEntity addDetails(@RequestBody DemoEntity obj3)
 	{
 		return obj.saveInfo(obj3);
 	}
-	@GetMapping("/fetch")
+	@GetMapping("/get")
 	public List<DemoEntity> getAllResttraining()
 	{
 		List<DemoEntity>listobj=obj.getAllDemoEntity();
